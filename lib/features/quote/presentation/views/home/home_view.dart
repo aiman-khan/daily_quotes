@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:daily_quotes/common/extensions/num.dart';
-import 'package:daily_quotes/common/widgets/app_filled_button.dart';
 import 'package:daily_quotes/features/quote/domain/models/photo/photo_model.dart';
 import 'package:daily_quotes/features/quote/domain/models/quote/quote_model.dart';
 import 'package:daily_quotes/features/quote/presentation/providers/get_random_photo_provider.dart';
@@ -101,14 +100,14 @@ class _HomeViewState extends ConsumerState<HomeView> {
                   Align(
                     alignment: Alignment.topRight,
                     child: IconButton(
-                      icon: Icon(Icons.refresh),
+                      icon: const Icon(Icons.refresh),
                       onPressed: () {
                         _getPhoto();
                         _getQuote();
                       },
                     ),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Stack(
                     alignment: Alignment.center,
                     children: [
@@ -154,7 +153,7 @@ class _HomeViewState extends ConsumerState<HomeView> {
                       ),
                     ],
                   ),
-                  Spacer(),
+                  const Spacer(),
                 ],
               ),
             ),
