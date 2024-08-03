@@ -26,10 +26,6 @@ dependencies:
   #DI
   get_it: ^7.2.0
   injectable: ^2.1.0
-  flutter_svg: ^2.0.4
-
-  #DB
-  hive_flutter: ^1.1.0
 
   #Network
   http: ^0.13.5
@@ -42,9 +38,7 @@ dependencies:
 
   #image
   cached_network_image: ^3.2.3
-  flutter_keyboard_visibility: ^6.0.0
   permission_handler: ^11.3.1
-  image_picker: ^1.0.8
   google_fonts: ^4.0.4
 
 dev_dependencies:

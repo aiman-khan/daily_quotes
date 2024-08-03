@@ -1,17 +1,16 @@
 import 'package:daily_quotes/common/extensions/num.dart';
-import 'package:daily_quotes/helpers/persistence/persistence_helper.dart';
 import 'package:daily_quotes/util/di/di.dart';
 import 'package:daily_quotes/util/router/router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 final navigatorKey = GlobalKey<NavigatorState>();
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   configureDependencies();
-  await sl<PersistenceHelper>().init();
   runApp(const MyApp());
 }
 
@@ -60,7 +59,7 @@ class _ProviderAppState extends State<ProviderApp> {
         key: navigatorKey,
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          primarySwatch: Colors.blue,
+          textTheme: GoogleFonts.poppinsTextTheme(),
         ),
         localeResolutionCallback: (locale, supportedLocales) {
           return locale;
