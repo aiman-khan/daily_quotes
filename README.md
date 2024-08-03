@@ -1,4 +1,4 @@
 # Random Quotes Generator with Random Background Image #
 
 
-![image](https://github.com/user-attachments/assets/9f9e8859-3e89-4399-812e-9774d65c486a)
+![image](https://github.com/user-attachments/assets/70a5017c-f236-4643-96cd-e8b2d7565702)
