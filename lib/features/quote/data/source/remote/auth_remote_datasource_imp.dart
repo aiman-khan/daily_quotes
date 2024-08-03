@@ -28,8 +28,6 @@ class AuthRemoteDataSourceImp implements AuthRemoteDataSource {
       _logger.i(input.toString());
       final response = await _networkCallHelper.get(Apis.photosApi);
 
-      // _logger.i("Response: $response");
-
       if (response["errors"] != null) {
         throw MessageException(message: response['errors']);
       }
@@ -53,9 +51,7 @@ class AuthRemoteDataSourceImp implements AuthRemoteDataSource {
       GetRandomQuoteUsecaseInput input) async {
     try {
       _logger.i(input.toString());
-      final response = await _networkCallHelper.get(Apis.quotesApi, params: {
-        'maxLength': 100,
-      });
+      final response = await _networkCallHelper.get(Apis.quotesApi);
 
       _logger.i("Quote Response: $response");
 
